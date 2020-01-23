@@ -8,7 +8,27 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let target = document.getElementById("target");
+        let template = document.getElementById("tpl-hero");
+        let promise = fetch("http://localhost:3000/heroes").then(rs => rs.json());
+        promise.then(valdddd =>
+            valdddd.forEach(element => {
+                let clone = document.importNode(template.content, true);
+                //Name
+                let name = clone.querySelectorAll("strong");
+                name[0].textContent = element.name;
+                //AlterEgo
+                let alter = clone.querySelectorAll("em");
+                alter[0].textContent = element.alterEgo;
+                //power
+                let power = clone.querySelectorAll("p");
+                power[0].textContent = element.abilities;
+                target.appendChild(clone);
+            }));
+
+    });
+
+    
 })();

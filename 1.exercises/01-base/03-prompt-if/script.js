@@ -10,10 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-    if(confirm("Est-ce que vous désirez une part de gâteau?")){
-        alert("Vous avez bien raison, la gâteau c'est la vie! :D");
+    if(confirm("Voulez vous du gateau?")){
+        alert("Désolé, il n'y en a plus !")
     }
     else{
-        alert("Mais vous êtes fous! Du gâteau ça ne se refuse pas :o!");
+        alert("Vous êtes sur ? :c")
     }
 })();

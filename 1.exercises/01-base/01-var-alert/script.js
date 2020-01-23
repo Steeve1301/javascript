@@ -10,6 +10,6 @@
 // You will have time to focus on it later.
 
 (() => {
-    let hello= "Hello, World";
+    let hello= "Hello World";
     alert(hello);
 })();

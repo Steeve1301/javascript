@@ -11,5 +11,5 @@
 
 (() => {
     let prenom= prompt("Quel est votre prénom?");
-    alert("Bonjour "+ prenom);
+    alert("Bonjour, "+prenom +"!");
 })();

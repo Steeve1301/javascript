@@ -10,21 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
+    let i;
 
-    let result=0;
+    while(i!=1){
+        let age= prompt("Quel est votre age?");
+        let ville= prompt("Quelle est votre ville");
+        let sexe= prompt("Quel est votre sexe ?");
 
-    while(result<1){
         
-        let age= prompt("Quel est votre âge?");
-        let sexe= prompt("Quel est votre sexe?");
-        let ville= prompt("Dans quelle ville habitez vous ?");
-
-        if(confirm("Confirmez vous que votre âge est : "+ age + " Que votre sexe est: " + sexe + " Et que vous habitez à : " + ville)){
-           result=result + 1; 
+        if(confirm("Vous confirmez que ces infos sont bien valide?"+ age + " "+sexe+" "+ville)){
+            i=1;
         }
         else{
-            result=0;
+            i=0;
         }
     }
+    
 
 })();

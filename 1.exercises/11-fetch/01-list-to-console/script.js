@@ -11,4 +11,9 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", () =>{
+        let value = fetch("http://localhost:3000/heroes").then(ls => ls.json());
+        value.then(val => console.log(val));
+    })
 })();
