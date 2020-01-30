@@ -1,0 +1,10 @@
+#canvas {
+  background-image: url("img/fond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mario {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
