@@ -1,21 +1,26 @@
 let selectElementsStartingWithA = (array) => {
-    return 'Write your method here';
+    return array.filter(word=>word[0]=="a");
 }
 
 let selectElementsStartingWithVowel = (array) => {
-    return 'Write your method here';
+    return array.filter(word=>word[0]=="a"||word[0]=="e"||word[0]=="i"||word[0]=="o"||word[0]=="u"||word[0]=="y");
 }
 
 let removeNullElements = (array) => {
-    return 'Write your method here';
+    return array.filter(word=>word != null);
 }
 
 let removeNullAndFalseElements = (array) => {
-    return 'Write your method here';
+    let tab= array.filter(word=>word !=null);
+
+    return tab.filter(word=>word !== false);
 }
 
 let reverseWordsInArray = (array) => {
-    return 'Write your method here';
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i].split('').reverse().join('');
+    }
+    return array;
 }
 
 let everyPossiblePair = (array) => {
