@@ -114,7 +114,6 @@ document.body.addEventListener("keydown", (event) => {
             positionBally= positiony+50;
             balles.push(new Ball(positionBallx,positionBally));
             update(positionMobx, positionMoby);
-            creaBall(ctx,positionBallx,positionBally);
             
         break;
     }
@@ -136,7 +135,7 @@ document.body.addEventListener("keyup", (event) => {
 
 setInterval(()=>{
     update(positionMobx, positionMoby);
-},10);
+},16);
 
 
 
